@@ -1,17 +1,66 @@
-cmake_minimum_required(VERSION 3.8)
-project(vuh VERSION 1.1.3)
+cmake_minimum_required(VERSION 3.24)
+project("example")
 
-option(VUH_BUILD_BENCHMARKS "Build benchmarks for vuh library" OFF)
-option(VUH_BUILD_DOCS "Build doxygen documentation for vuh" ON)
-option(VUH_BUILD_EXAMPLES "Build examples of using vuh" ON)
-option(VUH_BUILD_TESTS "Build tests for vuh library" ON)
-set(VUH_BUILD_TYPE SHARED CACHE STRING "STATIC or SHARED")
-set_property(CACHE VUH_BUILD_TYPE PROPERTY STRINGS STATIC SHARED)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_BUILD_TYPE Debug)
 
-set(CMAKE_CXX_STANDARD 14)
-list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/config)
-enable_testing()
+# set source and test directory
+set(source_dir "${CMAKE_CURRENT_SOURCE_DIR}/src")
+set(test_dir "${CMAKE_CURRENT_SOURCE_DIR}/test")
 
-add_subdirectory(doc)
-add_subdirectory(src)
-add_subdirectory(test)
+if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+    # include directories
+    include_directories(
+        "include"
+        "/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include/"
+    )
+    # vendor library directories
+    link_directories(
+        "/opt/homebrew/lib/"
+    )
+
+    # vendor: list of vendor packages to be linked with library and target
+    set(vendor
+        "MoltenVK"
+    )
+endif()
+
+
+
+
+
+
+# library_list: placeholder for all building libraries
+set(library_list)  
+
+# set output dir
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+
+# generate library build - add to library_list
+file(GLOB target_dir_list "${source_dir}/*")
+foreach(target_dir ${target_dir_list})
+    get_filename_component(target ${target_dir} NAME_WE)
+    message("generating library ... " ${target})
+
+    file(GLOB_RECURSE target_src "${target_dir}/*.cpp")
+    add_library(${target} SHARED ${target_src})
+    target_link_libraries(${target} ${vendor})
+
+    list(APPEND library_list ${target})
+    message("generating library ... " ${target} " done")
+endforeach()
+
+# generate test build 
+file(GLOB target_dir_list "${test_dir}/*")
+foreach(target_dir ${target_dir_list})
+    get_filename_component(target ${target_dir} NAME_WE)
+    message("generating test ... " ${target})
+
+    file(GLOB_RECURSE target_src "${target_dir}/*.cpp")
+    add_executable(${target} ${target_src})
+    target_link_libraries(${target} ${library_list} ${vendor})
+
+    message("generating test ... " ${target} " done")
+endforeach()

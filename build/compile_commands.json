@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/Users/khanh/projects/vuh/build",
+  "command": "/usr/bin/clang++ -Dvuh_EXPORTS -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -std=gnu++17 -o CMakeFiles/vuh.dir/src/vuh/device.cpp.o -c /Users/khanh/projects/vuh/src/vuh/device.cpp",
+  "file": "/Users/khanh/projects/vuh/src/vuh/device.cpp"
+},
+{
+  "directory": "/Users/khanh/projects/vuh/build",
+  "command": "/usr/bin/clang++ -Dvuh_EXPORTS -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -std=gnu++17 -o CMakeFiles/vuh.dir/src/vuh/error.cpp.o -c /Users/khanh/projects/vuh/src/vuh/error.cpp",
+  "file": "/Users/khanh/projects/vuh/src/vuh/error.cpp"
+},
+{
+  "directory": "/Users/khanh/projects/vuh/build",
+  "command": "/usr/bin/clang++ -Dvuh_EXPORTS -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -std=gnu++17 -o CMakeFiles/vuh.dir/src/vuh/instance.cpp.o -c /Users/khanh/projects/vuh/src/vuh/instance.cpp",
+  "file": "/Users/khanh/projects/vuh/src/vuh/instance.cpp"
+},
+{
+  "directory": "/Users/khanh/projects/vuh/build",
+  "command": "/usr/bin/clang++ -Dvuh_EXPORTS -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -std=gnu++17 -o CMakeFiles/vuh.dir/src/vuh/utils.cpp.o -c /Users/khanh/projects/vuh/src/vuh/utils.cpp",
+  "file": "/Users/khanh/projects/vuh/src/vuh/utils.cpp"
+},
+{
+  "directory": "/Users/khanh/projects/vuh/build",
+  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/correctness.dir/test/correctness/array_async_t.cpp.o -c /Users/khanh/projects/vuh/test/correctness/array_async_t.cpp",
+  "file": "/Users/khanh/projects/vuh/test/correctness/array_async_t.cpp"
+},
+{
+  "directory": "/Users/khanh/projects/vuh/build",
+  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/correctness.dir/test/correctness/array_t.cpp.o -c /Users/khanh/projects/vuh/test/correctness/array_t.cpp",
+  "file": "/Users/khanh/projects/vuh/test/correctness/array_t.cpp"
+},
+{
+  "directory": "/Users/khanh/projects/vuh/build",
+  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/correctness.dir/test/correctness/saxpy_async_t.cpp.o -c /Users/khanh/projects/vuh/test/correctness/saxpy_async_t.cpp",
+  "file": "/Users/khanh/projects/vuh/test/correctness/saxpy_async_t.cpp"
+},
+{
+  "directory": "/Users/khanh/projects/vuh/build",
+  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/correctness.dir/test/correctness/saxpy_sync_t.cpp.o -c /Users/khanh/projects/vuh/test/correctness/saxpy_sync_t.cpp",
+  "file": "/Users/khanh/projects/vuh/test/correctness/saxpy_sync_t.cpp"
+},
+{
+  "directory": "/Users/khanh/projects/vuh/build",
+  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/performance.dir/test/performance/array_copy_b.cpp.o -c /Users/khanh/projects/vuh/test/performance/array_copy_b.cpp",
+  "file": "/Users/khanh/projects/vuh/test/performance/array_copy_b.cpp"
+},
+{
+  "directory": "/Users/khanh/projects/vuh/build",
+  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/performance.dir/test/performance/saxpy_b.cpp.o -c /Users/khanh/projects/vuh/test/performance/saxpy_b.cpp",
+  "file": "/Users/khanh/projects/vuh/test/performance/saxpy_b.cpp"
+}
+]
