@@ -64,8 +64,10 @@ CMAKE_BINARY_DIR = /Users/khanh/projects/vuh/build
 
 # The main recursive "all" target.
 all: CMakeFiles/vuh.dir/all
-all: CMakeFiles/correctness.dir/all
-all: CMakeFiles/performance.dir/all
+all: CMakeFiles/compute_transfer_overlap.dir/all
+all: CMakeFiles/mandelbrot.dir/all
+all: CMakeFiles/saxpy.dir/all
+all: CMakeFiles/spdlog.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,8 +76,10 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/vuh.dir/clean
-clean: CMakeFiles/correctness.dir/clean
-clean: CMakeFiles/performance.dir/clean
+clean: CMakeFiles/compute_transfer_overlap.dir/clean
+clean: CMakeFiles/mandelbrot.dir/clean
+clean: CMakeFiles/saxpy.dir/clean
+clean: CMakeFiles/spdlog.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -105,56 +109,108 @@ CMakeFiles/vuh.dir/clean:
 .PHONY : CMakeFiles/vuh.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/correctness.dir
+# Target rules for target CMakeFiles/compute_transfer_overlap.dir
 
 # All Build rule for target.
-CMakeFiles/correctness.dir/all: CMakeFiles/vuh.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/khanh/projects/vuh/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target correctness"
-.PHONY : CMakeFiles/correctness.dir/all
+CMakeFiles/compute_transfer_overlap.dir/all: CMakeFiles/vuh.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compute_transfer_overlap.dir/build.make CMakeFiles/compute_transfer_overlap.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compute_transfer_overlap.dir/build.make CMakeFiles/compute_transfer_overlap.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/khanh/projects/vuh/build/CMakeFiles --progress-num=1,2 "Built target compute_transfer_overlap"
+.PHONY : CMakeFiles/compute_transfer_overlap.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/correctness.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/khanh/projects/vuh/build/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/correctness.dir/all
+CMakeFiles/compute_transfer_overlap.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/khanh/projects/vuh/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/compute_transfer_overlap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/khanh/projects/vuh/build/CMakeFiles 0
-.PHONY : CMakeFiles/correctness.dir/rule
+.PHONY : CMakeFiles/compute_transfer_overlap.dir/rule
 
 # Convenience name for target.
-correctness: CMakeFiles/correctness.dir/rule
-.PHONY : correctness
+compute_transfer_overlap: CMakeFiles/compute_transfer_overlap.dir/rule
+.PHONY : compute_transfer_overlap
 
 # clean rule for target.
-CMakeFiles/correctness.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/clean
-.PHONY : CMakeFiles/correctness.dir/clean
+CMakeFiles/compute_transfer_overlap.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compute_transfer_overlap.dir/build.make CMakeFiles/compute_transfer_overlap.dir/clean
+.PHONY : CMakeFiles/compute_transfer_overlap.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/performance.dir
+# Target rules for target CMakeFiles/mandelbrot.dir
 
 # All Build rule for target.
-CMakeFiles/performance.dir/all: CMakeFiles/vuh.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance.dir/build.make CMakeFiles/performance.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance.dir/build.make CMakeFiles/performance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/khanh/projects/vuh/build/CMakeFiles --progress-num=6,7,8 "Built target performance"
-.PHONY : CMakeFiles/performance.dir/all
+CMakeFiles/mandelbrot.dir/all: CMakeFiles/vuh.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/khanh/projects/vuh/build/CMakeFiles --progress-num=3,4 "Built target mandelbrot"
+.PHONY : CMakeFiles/mandelbrot.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/performance.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/khanh/projects/vuh/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/performance.dir/all
+CMakeFiles/mandelbrot.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/khanh/projects/vuh/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mandelbrot.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/khanh/projects/vuh/build/CMakeFiles 0
-.PHONY : CMakeFiles/performance.dir/rule
+.PHONY : CMakeFiles/mandelbrot.dir/rule
 
 # Convenience name for target.
-performance: CMakeFiles/performance.dir/rule
-.PHONY : performance
+mandelbrot: CMakeFiles/mandelbrot.dir/rule
+.PHONY : mandelbrot
 
 # clean rule for target.
-CMakeFiles/performance.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance.dir/build.make CMakeFiles/performance.dir/clean
-.PHONY : CMakeFiles/performance.dir/clean
+CMakeFiles/mandelbrot.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/clean
+.PHONY : CMakeFiles/mandelbrot.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/saxpy.dir
+
+# All Build rule for target.
+CMakeFiles/saxpy.dir/all: CMakeFiles/vuh.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saxpy.dir/build.make CMakeFiles/saxpy.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saxpy.dir/build.make CMakeFiles/saxpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/khanh/projects/vuh/build/CMakeFiles --progress-num=5,6 "Built target saxpy"
+.PHONY : CMakeFiles/saxpy.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/saxpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/khanh/projects/vuh/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/saxpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/khanh/projects/vuh/build/CMakeFiles 0
+.PHONY : CMakeFiles/saxpy.dir/rule
+
+# Convenience name for target.
+saxpy: CMakeFiles/saxpy.dir/rule
+.PHONY : saxpy
+
+# clean rule for target.
+CMakeFiles/saxpy.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saxpy.dir/build.make CMakeFiles/saxpy.dir/clean
+.PHONY : CMakeFiles/saxpy.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/spdlog.dir
+
+# All Build rule for target.
+CMakeFiles/spdlog.dir/all: CMakeFiles/vuh.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spdlog.dir/build.make CMakeFiles/spdlog.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spdlog.dir/build.make CMakeFiles/spdlog.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/khanh/projects/vuh/build/CMakeFiles --progress-num=7,8 "Built target spdlog"
+.PHONY : CMakeFiles/spdlog.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/spdlog.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/khanh/projects/vuh/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/spdlog.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/khanh/projects/vuh/build/CMakeFiles 0
+.PHONY : CMakeFiles/spdlog.dir/rule
+
+# Convenience name for target.
+spdlog: CMakeFiles/spdlog.dir/rule
+.PHONY : spdlog
+
+# clean rule for target.
+CMakeFiles/spdlog.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spdlog.dir/build.make CMakeFiles/spdlog.dir/clean
+.PHONY : CMakeFiles/spdlog.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

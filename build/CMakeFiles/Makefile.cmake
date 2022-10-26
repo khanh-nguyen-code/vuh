@@ -48,6 +48,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/vuh.dir/DependInfo.cmake"
-  "CMakeFiles/correctness.dir/DependInfo.cmake"
-  "CMakeFiles/performance.dir/DependInfo.cmake"
+  "CMakeFiles/compute_transfer_overlap.dir/DependInfo.cmake"
+  "CMakeFiles/mandelbrot.dir/DependInfo.cmake"
+  "CMakeFiles/saxpy.dir/DependInfo.cmake"
+  "CMakeFiles/spdlog.dir/DependInfo.cmake"
   )

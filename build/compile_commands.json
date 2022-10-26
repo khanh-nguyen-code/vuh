@@ -21,32 +21,22 @@
 },
 {
   "directory": "/Users/khanh/projects/vuh/build",
-  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/correctness.dir/test/correctness/array_async_t.cpp.o -c /Users/khanh/projects/vuh/test/correctness/array_async_t.cpp",
-  "file": "/Users/khanh/projects/vuh/test/correctness/array_async_t.cpp"
+  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/compute_transfer_overlap.dir/test/compute_transfer_overlap/main.cpp.o -c /Users/khanh/projects/vuh/test/compute_transfer_overlap/main.cpp",
+  "file": "/Users/khanh/projects/vuh/test/compute_transfer_overlap/main.cpp"
 },
 {
   "directory": "/Users/khanh/projects/vuh/build",
-  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/correctness.dir/test/correctness/array_t.cpp.o -c /Users/khanh/projects/vuh/test/correctness/array_t.cpp",
-  "file": "/Users/khanh/projects/vuh/test/correctness/array_t.cpp"
+  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/mandelbrot.dir/test/mandelbrot/main.cpp.o -c /Users/khanh/projects/vuh/test/mandelbrot/main.cpp",
+  "file": "/Users/khanh/projects/vuh/test/mandelbrot/main.cpp"
 },
 {
   "directory": "/Users/khanh/projects/vuh/build",
-  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/correctness.dir/test/correctness/saxpy_async_t.cpp.o -c /Users/khanh/projects/vuh/test/correctness/saxpy_async_t.cpp",
-  "file": "/Users/khanh/projects/vuh/test/correctness/saxpy_async_t.cpp"
+  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/saxpy.dir/test/saxpy/main.cpp.o -c /Users/khanh/projects/vuh/test/saxpy/main.cpp",
+  "file": "/Users/khanh/projects/vuh/test/saxpy/main.cpp"
 },
 {
   "directory": "/Users/khanh/projects/vuh/build",
-  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/correctness.dir/test/correctness/saxpy_sync_t.cpp.o -c /Users/khanh/projects/vuh/test/correctness/saxpy_sync_t.cpp",
-  "file": "/Users/khanh/projects/vuh/test/correctness/saxpy_sync_t.cpp"
-},
-{
-  "directory": "/Users/khanh/projects/vuh/build",
-  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/performance.dir/test/performance/array_copy_b.cpp.o -c /Users/khanh/projects/vuh/test/performance/array_copy_b.cpp",
-  "file": "/Users/khanh/projects/vuh/test/performance/array_copy_b.cpp"
-},
-{
-  "directory": "/Users/khanh/projects/vuh/build",
-  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/performance.dir/test/performance/saxpy_b.cpp.o -c /Users/khanh/projects/vuh/test/performance/saxpy_b.cpp",
-  "file": "/Users/khanh/projects/vuh/test/performance/saxpy_b.cpp"
+  "command": "/usr/bin/clang++  -I/Users/khanh/projects/vuh/include -I/opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/spdlog.dir/test/spdlog/main.cpp.o -c /Users/khanh/projects/vuh/test/spdlog/main.cpp",
+  "file": "/Users/khanh/projects/vuh/test/spdlog/main.cpp"
 }
 ]

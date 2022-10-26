@@ -130,30 +130,56 @@ vuh/fast:
 .PHONY : vuh/fast
 
 #=============================================================================
-# Target rules for targets named correctness
+# Target rules for targets named compute_transfer_overlap
 
 # Build rule for target.
-correctness: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 correctness
-.PHONY : correctness
+compute_transfer_overlap: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 compute_transfer_overlap
+.PHONY : compute_transfer_overlap
 
 # fast build rule for target.
-correctness/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/build
-.PHONY : correctness/fast
+compute_transfer_overlap/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compute_transfer_overlap.dir/build.make CMakeFiles/compute_transfer_overlap.dir/build
+.PHONY : compute_transfer_overlap/fast
 
 #=============================================================================
-# Target rules for targets named performance
+# Target rules for targets named mandelbrot
 
 # Build rule for target.
-performance: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 performance
-.PHONY : performance
+mandelbrot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mandelbrot
+.PHONY : mandelbrot
 
 # fast build rule for target.
-performance/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance.dir/build.make CMakeFiles/performance.dir/build
-.PHONY : performance/fast
+mandelbrot/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/build
+.PHONY : mandelbrot/fast
+
+#=============================================================================
+# Target rules for targets named saxpy
+
+# Build rule for target.
+saxpy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 saxpy
+.PHONY : saxpy
+
+# fast build rule for target.
+saxpy/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saxpy.dir/build.make CMakeFiles/saxpy.dir/build
+.PHONY : saxpy/fast
+
+#=============================================================================
+# Target rules for targets named spdlog
+
+# Build rule for target.
+spdlog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spdlog
+.PHONY : spdlog
+
+# fast build rule for target.
+spdlog/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spdlog.dir/build.make CMakeFiles/spdlog.dir/build
+.PHONY : spdlog/fast
 
 src/vuh/device.o: src/vuh/device.cpp.o
 .PHONY : src/vuh/device.o
@@ -251,149 +277,101 @@ src/vuh/utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vuh.dir/build.make CMakeFiles/vuh.dir/src/vuh/utils.cpp.s
 .PHONY : src/vuh/utils.cpp.s
 
-test/correctness/array_async_t.o: test/correctness/array_async_t.cpp.o
-.PHONY : test/correctness/array_async_t.o
+test/compute_transfer_overlap/main.o: test/compute_transfer_overlap/main.cpp.o
+.PHONY : test/compute_transfer_overlap/main.o
 
 # target to build an object file
-test/correctness/array_async_t.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/test/correctness/array_async_t.cpp.o
-.PHONY : test/correctness/array_async_t.cpp.o
+test/compute_transfer_overlap/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compute_transfer_overlap.dir/build.make CMakeFiles/compute_transfer_overlap.dir/test/compute_transfer_overlap/main.cpp.o
+.PHONY : test/compute_transfer_overlap/main.cpp.o
 
-test/correctness/array_async_t.i: test/correctness/array_async_t.cpp.i
-.PHONY : test/correctness/array_async_t.i
+test/compute_transfer_overlap/main.i: test/compute_transfer_overlap/main.cpp.i
+.PHONY : test/compute_transfer_overlap/main.i
 
 # target to preprocess a source file
-test/correctness/array_async_t.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/test/correctness/array_async_t.cpp.i
-.PHONY : test/correctness/array_async_t.cpp.i
+test/compute_transfer_overlap/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compute_transfer_overlap.dir/build.make CMakeFiles/compute_transfer_overlap.dir/test/compute_transfer_overlap/main.cpp.i
+.PHONY : test/compute_transfer_overlap/main.cpp.i
 
-test/correctness/array_async_t.s: test/correctness/array_async_t.cpp.s
-.PHONY : test/correctness/array_async_t.s
+test/compute_transfer_overlap/main.s: test/compute_transfer_overlap/main.cpp.s
+.PHONY : test/compute_transfer_overlap/main.s
 
 # target to generate assembly for a file
-test/correctness/array_async_t.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/test/correctness/array_async_t.cpp.s
-.PHONY : test/correctness/array_async_t.cpp.s
+test/compute_transfer_overlap/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/compute_transfer_overlap.dir/build.make CMakeFiles/compute_transfer_overlap.dir/test/compute_transfer_overlap/main.cpp.s
+.PHONY : test/compute_transfer_overlap/main.cpp.s
 
-test/correctness/array_t.o: test/correctness/array_t.cpp.o
-.PHONY : test/correctness/array_t.o
+test/mandelbrot/main.o: test/mandelbrot/main.cpp.o
+.PHONY : test/mandelbrot/main.o
 
 # target to build an object file
-test/correctness/array_t.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/test/correctness/array_t.cpp.o
-.PHONY : test/correctness/array_t.cpp.o
+test/mandelbrot/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/test/mandelbrot/main.cpp.o
+.PHONY : test/mandelbrot/main.cpp.o
 
-test/correctness/array_t.i: test/correctness/array_t.cpp.i
-.PHONY : test/correctness/array_t.i
+test/mandelbrot/main.i: test/mandelbrot/main.cpp.i
+.PHONY : test/mandelbrot/main.i
 
 # target to preprocess a source file
-test/correctness/array_t.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/test/correctness/array_t.cpp.i
-.PHONY : test/correctness/array_t.cpp.i
+test/mandelbrot/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/test/mandelbrot/main.cpp.i
+.PHONY : test/mandelbrot/main.cpp.i
 
-test/correctness/array_t.s: test/correctness/array_t.cpp.s
-.PHONY : test/correctness/array_t.s
+test/mandelbrot/main.s: test/mandelbrot/main.cpp.s
+.PHONY : test/mandelbrot/main.s
 
 # target to generate assembly for a file
-test/correctness/array_t.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/test/correctness/array_t.cpp.s
-.PHONY : test/correctness/array_t.cpp.s
+test/mandelbrot/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/test/mandelbrot/main.cpp.s
+.PHONY : test/mandelbrot/main.cpp.s
 
-test/correctness/saxpy_async_t.o: test/correctness/saxpy_async_t.cpp.o
-.PHONY : test/correctness/saxpy_async_t.o
+test/saxpy/main.o: test/saxpy/main.cpp.o
+.PHONY : test/saxpy/main.o
 
 # target to build an object file
-test/correctness/saxpy_async_t.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/test/correctness/saxpy_async_t.cpp.o
-.PHONY : test/correctness/saxpy_async_t.cpp.o
+test/saxpy/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saxpy.dir/build.make CMakeFiles/saxpy.dir/test/saxpy/main.cpp.o
+.PHONY : test/saxpy/main.cpp.o
 
-test/correctness/saxpy_async_t.i: test/correctness/saxpy_async_t.cpp.i
-.PHONY : test/correctness/saxpy_async_t.i
+test/saxpy/main.i: test/saxpy/main.cpp.i
+.PHONY : test/saxpy/main.i
 
 # target to preprocess a source file
-test/correctness/saxpy_async_t.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/test/correctness/saxpy_async_t.cpp.i
-.PHONY : test/correctness/saxpy_async_t.cpp.i
+test/saxpy/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saxpy.dir/build.make CMakeFiles/saxpy.dir/test/saxpy/main.cpp.i
+.PHONY : test/saxpy/main.cpp.i
 
-test/correctness/saxpy_async_t.s: test/correctness/saxpy_async_t.cpp.s
-.PHONY : test/correctness/saxpy_async_t.s
+test/saxpy/main.s: test/saxpy/main.cpp.s
+.PHONY : test/saxpy/main.s
 
 # target to generate assembly for a file
-test/correctness/saxpy_async_t.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/test/correctness/saxpy_async_t.cpp.s
-.PHONY : test/correctness/saxpy_async_t.cpp.s
+test/saxpy/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/saxpy.dir/build.make CMakeFiles/saxpy.dir/test/saxpy/main.cpp.s
+.PHONY : test/saxpy/main.cpp.s
 
-test/correctness/saxpy_sync_t.o: test/correctness/saxpy_sync_t.cpp.o
-.PHONY : test/correctness/saxpy_sync_t.o
+test/spdlog/main.o: test/spdlog/main.cpp.o
+.PHONY : test/spdlog/main.o
 
 # target to build an object file
-test/correctness/saxpy_sync_t.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/test/correctness/saxpy_sync_t.cpp.o
-.PHONY : test/correctness/saxpy_sync_t.cpp.o
+test/spdlog/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spdlog.dir/build.make CMakeFiles/spdlog.dir/test/spdlog/main.cpp.o
+.PHONY : test/spdlog/main.cpp.o
 
-test/correctness/saxpy_sync_t.i: test/correctness/saxpy_sync_t.cpp.i
-.PHONY : test/correctness/saxpy_sync_t.i
-
-# target to preprocess a source file
-test/correctness/saxpy_sync_t.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/test/correctness/saxpy_sync_t.cpp.i
-.PHONY : test/correctness/saxpy_sync_t.cpp.i
-
-test/correctness/saxpy_sync_t.s: test/correctness/saxpy_sync_t.cpp.s
-.PHONY : test/correctness/saxpy_sync_t.s
-
-# target to generate assembly for a file
-test/correctness/saxpy_sync_t.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness.dir/build.make CMakeFiles/correctness.dir/test/correctness/saxpy_sync_t.cpp.s
-.PHONY : test/correctness/saxpy_sync_t.cpp.s
-
-test/performance/array_copy_b.o: test/performance/array_copy_b.cpp.o
-.PHONY : test/performance/array_copy_b.o
-
-# target to build an object file
-test/performance/array_copy_b.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance.dir/build.make CMakeFiles/performance.dir/test/performance/array_copy_b.cpp.o
-.PHONY : test/performance/array_copy_b.cpp.o
-
-test/performance/array_copy_b.i: test/performance/array_copy_b.cpp.i
-.PHONY : test/performance/array_copy_b.i
+test/spdlog/main.i: test/spdlog/main.cpp.i
+.PHONY : test/spdlog/main.i
 
 # target to preprocess a source file
-test/performance/array_copy_b.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance.dir/build.make CMakeFiles/performance.dir/test/performance/array_copy_b.cpp.i
-.PHONY : test/performance/array_copy_b.cpp.i
+test/spdlog/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spdlog.dir/build.make CMakeFiles/spdlog.dir/test/spdlog/main.cpp.i
+.PHONY : test/spdlog/main.cpp.i
 
-test/performance/array_copy_b.s: test/performance/array_copy_b.cpp.s
-.PHONY : test/performance/array_copy_b.s
-
-# target to generate assembly for a file
-test/performance/array_copy_b.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance.dir/build.make CMakeFiles/performance.dir/test/performance/array_copy_b.cpp.s
-.PHONY : test/performance/array_copy_b.cpp.s
-
-test/performance/saxpy_b.o: test/performance/saxpy_b.cpp.o
-.PHONY : test/performance/saxpy_b.o
-
-# target to build an object file
-test/performance/saxpy_b.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance.dir/build.make CMakeFiles/performance.dir/test/performance/saxpy_b.cpp.o
-.PHONY : test/performance/saxpy_b.cpp.o
-
-test/performance/saxpy_b.i: test/performance/saxpy_b.cpp.i
-.PHONY : test/performance/saxpy_b.i
-
-# target to preprocess a source file
-test/performance/saxpy_b.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance.dir/build.make CMakeFiles/performance.dir/test/performance/saxpy_b.cpp.i
-.PHONY : test/performance/saxpy_b.cpp.i
-
-test/performance/saxpy_b.s: test/performance/saxpy_b.cpp.s
-.PHONY : test/performance/saxpy_b.s
+test/spdlog/main.s: test/spdlog/main.cpp.s
+.PHONY : test/spdlog/main.s
 
 # target to generate assembly for a file
-test/performance/saxpy_b.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/performance.dir/build.make CMakeFiles/performance.dir/test/performance/saxpy_b.cpp.s
-.PHONY : test/performance/saxpy_b.cpp.s
+test/spdlog/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/spdlog.dir/build.make CMakeFiles/spdlog.dir/test/spdlog/main.cpp.s
+.PHONY : test/spdlog/main.cpp.s
 
 # Help Target
 help:
@@ -403,8 +381,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... correctness"
-	@echo "... performance"
+	@echo "... compute_transfer_overlap"
+	@echo "... mandelbrot"
+	@echo "... saxpy"
+	@echo "... spdlog"
 	@echo "... vuh"
 	@echo "... src/vuh/device.o"
 	@echo "... src/vuh/device.i"
@@ -418,24 +398,18 @@ help:
 	@echo "... src/vuh/utils.o"
 	@echo "... src/vuh/utils.i"
 	@echo "... src/vuh/utils.s"
-	@echo "... test/correctness/array_async_t.o"
-	@echo "... test/correctness/array_async_t.i"
-	@echo "... test/correctness/array_async_t.s"
-	@echo "... test/correctness/array_t.o"
-	@echo "... test/correctness/array_t.i"
-	@echo "... test/correctness/array_t.s"
-	@echo "... test/correctness/saxpy_async_t.o"
-	@echo "... test/correctness/saxpy_async_t.i"
-	@echo "... test/correctness/saxpy_async_t.s"
-	@echo "... test/correctness/saxpy_sync_t.o"
-	@echo "... test/correctness/saxpy_sync_t.i"
-	@echo "... test/correctness/saxpy_sync_t.s"
-	@echo "... test/performance/array_copy_b.o"
-	@echo "... test/performance/array_copy_b.i"
-	@echo "... test/performance/array_copy_b.s"
-	@echo "... test/performance/saxpy_b.o"
-	@echo "... test/performance/saxpy_b.i"
-	@echo "... test/performance/saxpy_b.s"
+	@echo "... test/compute_transfer_overlap/main.o"
+	@echo "... test/compute_transfer_overlap/main.i"
+	@echo "... test/compute_transfer_overlap/main.s"
+	@echo "... test/mandelbrot/main.o"
+	@echo "... test/mandelbrot/main.i"
+	@echo "... test/mandelbrot/main.s"
+	@echo "... test/saxpy/main.o"
+	@echo "... test/saxpy/main.i"
+	@echo "... test/saxpy/main.s"
+	@echo "... test/spdlog/main.o"
+	@echo "... test/spdlog/main.i"
+	@echo "... test/spdlog/main.s"
 .PHONY : help
 
 

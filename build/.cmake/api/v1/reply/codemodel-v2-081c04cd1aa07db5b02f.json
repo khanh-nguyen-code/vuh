@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "example",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "compute_transfer_overlap::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-compute_transfer_overlap-Debug-1e37d624784dd4a3be7a.json",
+					"name" : "compute_transfer_overlap",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mandelbrot::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mandelbrot-Debug-6696924113a77ebcd717.json",
+					"name" : "mandelbrot",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "saxpy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-saxpy-Debug-acfc2c7877c9b7a6ca92.json",
+					"name" : "saxpy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "spdlog::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-spdlog-Debug-f205a27651e0d57f6dd1.json",
+					"name" : "spdlog",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vuh::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vuh-Debug-8c585927d094cbfbab89.json",
+					"name" : "vuh",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/khanh/projects/vuh/build",
+		"source" : "/Users/khanh/projects/vuh"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

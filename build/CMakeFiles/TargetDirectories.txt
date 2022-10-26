@@ -1,5 +1,7 @@
 /Users/khanh/projects/vuh/build/CMakeFiles/vuh.dir
-/Users/khanh/projects/vuh/build/CMakeFiles/correctness.dir
-/Users/khanh/projects/vuh/build/CMakeFiles/performance.dir
+/Users/khanh/projects/vuh/build/CMakeFiles/compute_transfer_overlap.dir
+/Users/khanh/projects/vuh/build/CMakeFiles/mandelbrot.dir
+/Users/khanh/projects/vuh/build/CMakeFiles/saxpy.dir
+/Users/khanh/projects/vuh/build/CMakeFiles/spdlog.dir
 /Users/khanh/projects/vuh/build/CMakeFiles/edit_cache.dir
 /Users/khanh/projects/vuh/build/CMakeFiles/rebuild_cache.dir
