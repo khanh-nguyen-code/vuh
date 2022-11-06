@@ -13,7 +13,8 @@ ifeq ($(UNAME), Darwin)
 	# specific for MacOS
 	CC = clang
 	CFLAGS = $(COMMON_FLAGS) -Wall -fPIC
-	CFLAGS += -I /opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include/ -L /opt/homebrew/lib/
+	CFLAGS += -I /opt/homebrew/include -L /opt/homebrew/lib
+	CFLAGS += -I /opt/homebrew/Cellar/molten-vk/1.2.0/libexec/include/
 	LDFLAGS = -l stdc++
 	LDFLAGS += -l MoltenVK
 
@@ -42,9 +43,12 @@ bin/%: target/%
 	@mkdir -p bin
 	$(CC) $(CFLAGS) -o $@ $</*.cpp $(LDFLAGS) $(THIS_LDFLAGS)
 
-all: $(OBJECT_OUT_LIST) $(LIBRARY_OUT_LIST) $(TARGET_OUT_LIST)
+all: echo $(OBJECT_OUT_LIST) $(LIBRARY_OUT_LIST) $(TARGET_OUT_LIST)
+
+echo: 
+	@echo "Compiling on $(UNAME)"
 
 clean:
 	rm -rf obj lib bin
 
-.PHONY: clean all
+.PHONY: all echo clean
